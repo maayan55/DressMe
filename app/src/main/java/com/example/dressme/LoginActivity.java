@@ -15,6 +15,7 @@ import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
+
 public class LoginActivity extends AppCompatActivity {
     private FirebaseAuth mAuth;
 
@@ -43,6 +44,7 @@ public class LoginActivity extends AppCompatActivity {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if (task.isSuccessful()) {
+                            Toast.makeText(LoginActivity.this, "registration was successful", Toast.LENGTH_LONG).show();
                             startActivity(new Intent(LoginActivity.this, WelcomeActivity.class));
                         } else {
                             Toast.makeText(LoginActivity.this, "register failed:(", Toast.LENGTH_LONG).show();
