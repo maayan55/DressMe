@@ -1,9 +1,9 @@
 package Adapters;
 
-public class ReserveProduct {
+public class ReserveDress {
     private String reserveId, productId, supplierId, clientId, resDate, returnDate;
-    public ReserveProduct() {}
-    public ReserveProduct(String prodId, String suppId, String clientId, String resDate, String returnDate){
+    public ReserveDress() {}
+    public ReserveDress(String prodId, String suppId, String clientId, String resDate, String returnDate){
         this.productId = prodId;
         this.supplierId = suppId;
         this.clientId = clientId;
